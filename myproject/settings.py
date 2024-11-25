@@ -37,7 +37,7 @@ SECRET_KEY = 'django-insecure-oa9((hvi=90to$^(p@3yl(l#!oyi23*%xa!m=-39cuwu#z@=fs
 
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1']
+ALLOWED_HOSTS = ['furniture-one-flax.vercel.app']
 
 
 # Application definition
