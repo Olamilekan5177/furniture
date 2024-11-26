@@ -14,7 +14,7 @@ def signup(request):
             # Log the user in immediately
             login(request, user)
             # Redirect to a page, e.g., the profile page or homepage
-            return redirect('in')  # Change 'profile' to whatever view you want to redirect to
+            return redirect('index')  # Change 'profile' to whatever view you want to redirect to
     else:
         form = RegistrationForm()
 
