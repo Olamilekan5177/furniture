@@ -1,5 +1,4 @@
 import os
-import os
 import dj_database_url
 from dotenv import load_dotenv
 from decouple import config
@@ -37,7 +36,7 @@ SECRET_KEY = 'django-insecure-oa9((hvi=90to$^(p@3yl(l#!oyi23*%xa!m=-39cuwu#z@=fs
 
 DEBUG = True
 
-ALLOWED_HOSTS = ['furniture-one-flax.vercel.app']
+ALLOWED_HOSTS = ['junction.proxy.rlwy.net']
 
 
 # Application definition
@@ -70,7 +69,7 @@ ROOT_URLCONF = 'myproject.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [BASE_DIR / 'myapp' / 'templates'],
+        'DIRS': [BASE_DIR / 'templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

@@ -11,12 +11,10 @@ def signup(request):
         if form.is_valid():
             # Save the new user to the database
             user = form.save()
-
             # Log the user in immediately
             login(request, user)
-
             # Redirect to a page, e.g., the profile page or homepage
-            return redirect('profile')  # Change 'profile' to whatever view you want to redirect to
+            return redirect('in')  # Change 'profile' to whatever view you want to redirect to
     else:
         form = RegistrationForm()
 
