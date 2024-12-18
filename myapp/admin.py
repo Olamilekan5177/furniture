@@ -1,5 +1,7 @@
 from django.contrib import admin
-# from .models import Item
+from django.urls import path
 
-# Register your models here.
-# admin.site.register(Item)
+urlpatterns = [
+    path('admin/', admin.site.urls),
+    # your other URLs
+]
