@@ -1,7 +1,5 @@
 from django.contrib import admin
-from django.urls import path
+from .models import Product, Product2
 
-urlpatterns = [
-    path('admin/', admin.site.urls),
-    # your other URLs
-]
+admin.site.register(Product)
+admin.site.register(Product2)

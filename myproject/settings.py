@@ -36,7 +36,8 @@ SECRET_KEY = 'django-insecure-oa9((hvi=90to$^(p@3yl(l#!oyi23*%xa!m=-39cuwu#z@=fs
 
 DEBUG = True
 
-ALLOWED_HOSTS = ['furniture-git-main-wahabs-projects-2573f690.vercel.app']
+ALLOWED_HOSTS = ['127.0.0.1']
+# ALLOWED_HOSTS = ['furniture-git-main-wahabs-projects-2573f690.vercel.app']
 
 
 # Application definition
@@ -139,6 +140,14 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+# Media files (uploads)
+# settings.py
+
+MEDIA_URL = '/media/'  # The URL path for serving media files
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')  # The filesystem path for media files
+
+
+
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field

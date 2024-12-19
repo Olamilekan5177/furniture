@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from .models import Product, Product2
 
 # Create your views here.
 def base(request):
@@ -8,6 +9,7 @@ def about(request):
   return render(request, 'myapp/about.html')
 
 def blog(request):
+ 
   return render(request, 'myapp/blog.html')
 
 def cart(request):
@@ -20,13 +22,17 @@ def contact(request):
   return render(request, 'myapp/contact.html')
 
 def index(request):
-  return render(request, 'myapp/index.html')
+  products = Product.objects.all()
+  return render(request, 'myapp/index.html', {'products': products})
 
 def services(request):
-  return render(request, 'myapp/services.html')
+  products = Product.objects.all()
+  return render(request, 'myapp/services.html', {'products': products})
+
 
 def shop(request):
-  return render(request, 'myapp/shop.html')
+    product2s = Product2.objects.all()
+    return render(request, 'myapp/shop.html', {'product2s': product2s})
 
 def thankyou(request):
   return render(request, 'myapp/thankyou.html')
